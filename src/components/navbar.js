@@ -11,8 +11,8 @@ export default function Navbar() {
         useEffect(() => {
             const handleScroll = () => {
                 if(window.pageYOffset > 20) {
-                    setHeaderClass('bg-white fixed top-0 left-0 right-0 transition-all z-50')
-                    setNavItem('font-bold uppercase text-dark text-sm')
+                    setHeaderClass('bg-dark bg-opacity-50 backdrop-blur-md fixed top-0 left-0 right-0 transition-all z-50')
+                    setNavItem('font-bold uppercase text-white text-sm')
                 } else {
                     setHeaderClass('fixed top-0 left-0 right-0 transition-all z-50')
                     setNavItem('font-bold uppercase text-white text-sm transition-all z-50')
@@ -38,7 +38,7 @@ export default function Navbar() {
                             <li> <Link href="/webdev" className={navItem}>Packet</Link></li>
                         </ul>
                         <div className="search ml-20 bg-blue w-32 h-12 flex justify-center items-center py-3 rounded-full">
-                            <Link className="button uppercase text-white text-sm font-bold" href="">üyelik</Link>
+                            <Link className="btn-main uppercase" href="">üyelik</Link>
                         </div>
                     </div>
 

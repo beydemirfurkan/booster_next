@@ -4,5 +4,22 @@
 
 
 p {
-    @apply text-gray-100 text-lg 
+    @apply text-customGray text-lg 
+}
+
+span {
+    @apply text-customGray 
+}
+
+.btn-main {
+    @apply px-5 w-48 py-4 text-sm rounded-full font-semibold text-center text-white bg-customBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.btn-main-2 {
+    @apply px-8 py-5 text-sm rounded-full font-semibold text-center text-white bg-darkYellow hover:bg-darkYellow focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+
+h1,h2 {
+    @apply text-white font-semibold ;
+    
 }

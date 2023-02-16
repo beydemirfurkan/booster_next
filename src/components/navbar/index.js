@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
+import { IoIosPeople } from 'react-icons/io';
 
 
 export default function Navbar() {
@@ -20,28 +20,32 @@ export default function Navbar() {
             };
             window.addEventListener('scroll', handleScroll);
             return () => {
-                window.removEventListener('scroll', handleScroll)
+                window.removeEventListener('scroll', handleScroll)
             };
         },[]);
 
     return (
         <header className={ headerClass }>
             <div className="container mx-auto">
-                <nav className="flex justify-between items-center py-5">
+                <nav className="flex justify-between items-center py-4">
                     <div className="logo">
                         <h1>WebDev News</h1>
                     </div>
                     <div className="navigation-and-signup ms-auto flex items-center">
-                        <ul class="flex gap-10">
-                            <li> <Link href="/" className={navItem}>Boosting</Link> </li>
-                            <li> <Link href="/about" className={navItem}>Coaching</Link></li>
-                            <li> <Link href="/webdev" className={navItem}>Packet</Link></li>
+                        <ul className="flex items-center gap-10"> 
+                        {[
+                            {name: 'Boosting', link: '/'},
+                            {name: 'Coaching', link: '/about'},
+                            {name: 'Packet', link: '/articles'},
+                        ].map((item, index) => (
+                            <li key={index}><Link href={item.link} className='relative font-semibold text-white text-sm uppercase before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-[#0d3bff] before:transition hover:before:scale-x-100'>{item.name}</Link></li>
+                        ))
+                        }
+                            <li>
+                                <Link className="flex items-center justify-center gap-3 py-3 px-7  bg-[#0d3bff] text-white font-semibold uppercase text-sm shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 rounded-full" href="/"><IoIosPeople className='text-2xl' /><span className='text-sm'>üyelik</span></Link>
+                            </li>
                         </ul>
-                        <div className="search ml-20 bg-blue w-32 h-12 flex justify-center items-center py-3 rounded-full">
-                            <Link className="btn-main uppercase" href="">üyelik</Link>
-                        </div>
                     </div>
-
                 </nav>
             </div>
         </header>

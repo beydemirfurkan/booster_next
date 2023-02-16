@@ -6,11 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "flowbite": "^1.6.3",
-    "flowbite-react": "^0.3.8",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "swiper": "^9.0.2"
   },
   "devDependencies": {

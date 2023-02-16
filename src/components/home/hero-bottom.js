@@ -33,8 +33,8 @@ export default function HeroBottom() {
       <div className="container relative z-10 mx-auto px-5">
         <div className="grid w-full grid-cols-12 gap-4 items-center">
           <div className="col-span-12 lg:col-span-4">
-            <span className="uppercase text-sm font-bold text-customGray">game boost</span>
-            <h2 className="pt-2 text-5xl">
+            <span className="uppercase text-sm font-bold text-gray-400">game boost</span>
+            <h2 className="pt-2 text-5xl custom-title">
               What we've <br/> achieved so far
             </h2>
             <p className="w-full md:w-2/3 py-10">

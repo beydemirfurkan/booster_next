@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Ranked() {
   return (
-    <section className="ranked py-40 bg-[url('/images/home/bg-star.png')] bg-cover">
-      <div className="container relative z-10 mx-auto px-5">
+    <section className="ranked pb-52 pt-20 bg-bottom bg-[url('/images/home/bg-star.png')] bg-cover">
+      <div className="container relative z-10 mx-auto px-5 ">
         <div className="grid w-full grid-cols-12 gap-4 place-items-center">
           <div className="col-span-12 lg:col-span-7">
             <Image src="/images/home/rank.png" width={800} height={800} alt="Ranked"></Image>

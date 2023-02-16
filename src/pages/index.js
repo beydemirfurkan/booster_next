@@ -6,6 +6,7 @@ import ValorantBoost from '../components/home/valorant-boost';
 import Coaching from '../components/home/coaching';
 import Vpn from '../components/home/vpn';
 import Ranked2 from '../components/home/ranked2';
+import Faq from '../components/home/faq';
 
 export default function Home() {
   return ( 
@@ -21,6 +22,7 @@ export default function Home() {
       <Coaching/>
       <Vpn />
       <Ranked2/>
+      <Faq/>
     </div>
   )
 }

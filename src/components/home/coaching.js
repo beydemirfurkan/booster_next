@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Coaching() {
   return (
-    <section className="coaching py-32">
+    <section className="coaching py-12">
       <div className="container mx-auto px-5 md:px-0">
         <div className="flex flex-wrap justify-evenly items-center w-full">
           <div className="md:w-5/12 lg:w-4/12 order-first">

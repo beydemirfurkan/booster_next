@@ -6,11 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "swiper": "^9.0.2"
+    "swiper": "^9.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

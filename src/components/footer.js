@@ -1,8 +1,11 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Footer() {
     return (
         <footer>
-            <div className="flex justify-center items-center py-5 bg-white">
-                <p>Footer</p>
+            <div className='container px-4 py-5'>
+            
             </div>
         </footer>
     )

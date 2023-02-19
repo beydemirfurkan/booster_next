@@ -103,14 +103,14 @@ export default function blog() {
         slideData.map((slide, index) => (
           <SwiperSlide key={index} className="swiper-slide">
               <figure className="flex flex-col items-center justify-center mx-auto gaming-item">
-                <div className='w-full'>
+                <Link className='w-full' href='/blog'>
                 <Image src={slide.image} 
                           alt="Blog Image"  
                           width={360}
                           height={300}                      
                           objectFit="cover"
                           objectPosition="center"/>
-                </div>
+                </Link>
 
                   <figcaption className='w-full px-5 py-3'>
                     <p className="!text-white font-semibold text-ellipsis">{slide.title}</p>

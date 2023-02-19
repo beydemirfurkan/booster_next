@@ -33,9 +33,9 @@ export default function Navbar() {
         <header className={ headerClass }>
             <div className="container mx-auto ">
                 <nav className="items-center justify-between py-2 sm:flex">
-                    <div className="px-4 logo sm:px-0">
+                    <Link href='/' className="px-4 logo sm:px-0">
                         <Image src="/images/global/logo.png" width={80} height={80} alt="Logo" />
-                    </div>
+                    </Link>
                     <div className="sm:hidden">
                       <button className="absolute p-2 text-3xl text-white rounded-md outline-none top-6 right-5 focus:border-gray-100 focus:border"
                           onClick={() => setMobileMenu(!mobileMenu)}

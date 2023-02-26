@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Vpn() {
   return (
-    <section className="py-12 coaching">
+    <section className="py-12 vpn">
       <div className="container px-5 mx-auto md:px-0">
         <div className="flex flex-wrap items-center w-full justify-evenly">
           <div className="order-last md:w-6/12 lg:w-5/12 md:order-first">

@@ -81,6 +81,8 @@ export default function blog() {
         </div>
         <Swiper 
           spaceBetween={50}
+          loop={true}
+          autoplay={true}
           breakpoints={{
             320: {
               slidesPerView: "auto",
@@ -95,8 +97,8 @@ export default function blog() {
               spaceBetween: 50
             }
           }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
           className="swiper-container"
         >
       {
@@ -105,11 +107,11 @@ export default function blog() {
               <figure className="flex flex-col items-center justify-center mx-auto gaming-item">
                 <Link className='w-full' href='/blog'>
                 <Image src={slide.image} 
+                          className='object-cover object-center'
                           alt="Blog Image"  
                           width={360}
                           height={300}                      
-                          objectFit="cover"
-                          objectPosition="center"/>
+                          />
                 </Link>
 
                   <figcaption className='w-full px-5 py-3'>

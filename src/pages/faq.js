@@ -3,8 +3,13 @@ import { Fragment } from 'react';
 import { Disclosure, Transition } from "@headlessui/react";
 import { FiChevronDown } from "react-icons/fi";
 
-export default function faq() {
+export default function Faq() {
   const faq = [
+    {
+      question: "How does the product work?",
+      answer:
+        "This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.",
+    },
     {
       question: "How does the product work?",
       answer:
@@ -28,18 +33,24 @@ export default function faq() {
   ];
 
   return (
-    <section className="relative pt-24 overflow-hidden pb-28 bg-blueGray-50">
-      <div className="container px-4 mx-auto lg:px-32">
-        <div className="mb-10 md:mb-16">
-          <p className="pb-2 !text-sm text-center font-semibold uppercase tracking-px">
-            merak ettikleriniz
-          </p>
-          <h2 className="mb-16 text-3xl font-bold leading-none text-center md:text-4xl xl:text-5xl font-heading tracking-px-n custom-title custom-shadow">
+    <section className="relative h-screen pt-40 overflow-hidden pb-28 bg-blueGray-50" style={{
+        backgroundImage: "url('/images/faq/bg.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover"
+        
+    }}>
+      <div className="container h-full px-4 mx-auto lg:px-32">
+        <div className="mb-10 text-center md:mb-16">
+          <h2 className="text-3xl font-bold leading-none text-center md:text-4xl xl:text-5xl font-heading tracking-px-n custom-title custom-shadow">
             FAQ
           </h2>
+          <p className='py-3'>
+          We have the best boosters available in the industry <br/> ready to take your game to the next level.
+          </p>
         </div>
 
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:max-w-lg">
           {faq.map((item, index) => {
             return (
               <Disclosure key={index} as="div">
@@ -47,7 +58,7 @@ export default function faq() {
                   <>
                     <div className="bg-[#232323] p-5 border-[#8f8d8d] border-2 rounded-2xl drop-shadow-[0_10px_35px_rgba(66,41,74,1)] w-full">
                       <Disclosure.Button className="flex items-center justify-between w-full gap-4">
-                        <h3 className="text-lg font-semibold text-white">
+                        <h3 classNbame="text-white text-lg font-semibold">
                           {item.question}
                         </h3>
                         <span className="text-2xl">

@@ -34,7 +34,7 @@ export default function Navbar() {
             <div className="container mx-auto ">
                 <nav className="items-center justify-between py-2 sm:flex">
                     <Link href='/' className="px-4 logo sm:px-0">
-                        <Image src="/images/global/logo.png" width={80} height={80} alt="Logo" />
+                        <Image src="/images/global/logo.png" width={116} height={124} alt="Logo" />
                     </Link>
                     <div className="sm:hidden">
                       <button className="absolute p-2 text-3xl text-white rounded-md outline-none top-6 right-5 focus:border-gray-100 focus:border"
@@ -53,8 +53,9 @@ export default function Navbar() {
                         <ul className="flex flex-col items-center gap-10 sm:flex-row"> 
                         {[
                             {name: 'Boosting', link: '/'},
-                            {name: 'Coaching', link: '/about'},
-                            {name: 'Packet', link: '/articles'},
+                            {name: 'Coaching', link: '/coaching'},
+                            {name: 'Packet', link: '/packet'},
+                            {name: 'Blog', link: '/blog'},
                         ].map((item, index) => (
                             <li key={index}><Link href={item.link} className='relative font-semibold text-white text-sm uppercase before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-[#0d3bff] before:transition hover:before:scale-x-100'>{item.name}</Link></li>
                         ))

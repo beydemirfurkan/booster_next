@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Ranked2() {
   return (
-    <section className="py-12 coaching ">
+    <section className="py-12 ranked2 ">
       <div className="container px-5 mx-auto md:px-0">
         <div className="flex flex-wrap items-center w-full justify-evenly">
           <div className="order-first max-w-md md:w-5/12 lg:w-4/12">

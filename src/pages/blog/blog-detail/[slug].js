@@ -33,7 +33,6 @@ export default function blogDetail ({frontmatter: { title, description, images }
 
 export async function getStaticPaths() {
     const files = fs.readdirSync(path.join('src/posts'))
-    
     const paths = files.map(filename => ({
         params: {
             slug: filename.replace('.md', '')

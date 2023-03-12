@@ -1,7 +1,12 @@
 import * as React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import TabTable from '../../components/coach-panel';
+import dynamic from 'next/dynamic';
+
+const TabTable = dynamic(
+	() => import('../../components/coach-panel'),
+	{ssr: false}
+)
 
 export default function coaching() {
 
